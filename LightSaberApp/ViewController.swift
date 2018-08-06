@@ -62,6 +62,7 @@ class ViewController: UIViewController {
                 let y = acc.acceleration.y
                 let z = acc.acceleration.z
                 let synthetic = (x * x) + (y * y) + (z * z)
+                
                 if self.startAccel == false && synthetic >= 4 {
                     self.startAccel = true
                     self.audioPlayer.currentTime = 0
